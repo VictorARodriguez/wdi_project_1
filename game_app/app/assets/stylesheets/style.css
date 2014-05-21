@@ -23,3 +23,22 @@ nav {
   font-family: Cursive;
   color: white;
 }
+
+.button {
+  background-color: white;
+  height: 90px;
+  width: 350px;
+  color: purple;
+  margin:  0 auto;
+  font-size: 2em;
+  text-align: center;
+  line-height: 90px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px gray;
+}
+
+.button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+}

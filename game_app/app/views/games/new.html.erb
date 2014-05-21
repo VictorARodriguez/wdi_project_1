@@ -1,7 +1,13 @@
-<%= form_for @user, url: "/users", method: "POST" do |f| %>
-  <%= f.text_field :name, {placeholder: "name"} %>
-  <%= f.text_field :email, {placeholder: "email"} %>
-  <%= f.text_field :password, {placeholder: "password"} %>
-  <%= f.text_field :bio, {placeholder: "bio"} %>
-  <%= f.submit %>
-<% end %>
+<div class="new-game">
+  <%= form_for @game do |f| %>
+    <img class="game-img img-one" src="<%= @game.image_one_url %>" width="250" >
+    <%= f.hidden_field :image_one_url, :value => @game.image_one_url %>
+    <img class="game-img img-two" src="<%= @game.image_two_url %>" width="250" >
+    <%= f.hidden_field :image_two_url, :value => @game.image_two_url %>
+    <img class="game-img img-three" src="<%= @game.image_three_url %>" width="250" >
+    <%= f.hidden_field :image_three_url, :value => @game.image_three_url %>
+    <%= f.text_field :name, {placeholder: "Give a name here!"} %>
+    <%= f.submit "Create game!" %>
+    <%= link_to "Refresh images...", new_game_path %>
+  <% end %>
+</div>

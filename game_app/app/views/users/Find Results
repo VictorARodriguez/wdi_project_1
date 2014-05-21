@@ -1,0 +1,16 @@
+Searching 114 files for "new_game_path"
+
+/Users/rodriguezva/code/wdi/projects/wdi_project_1/game_app/app/views/games/new.html.erb:
+    9      <%= f.text_field :name, {placeholder: "Give a name here!"} %>
+   10      <%= f.submit "Create game!" %>
+   11:     <%= link_to "Refresh images...", new_game_path %>
+   12    <% end %>
+   13  </div>
+
+/Users/rodriguezva/code/wdi/projects/wdi_project_1/game_app/app/views/users/show.html.erb:
+   10  
+   11  <div class="button">
+   12:   <%= link_to "Create a new Game!", new_game_path%>
+   13  </div>
+
+2 matches across 2 files
