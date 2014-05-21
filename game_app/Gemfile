@@ -30,6 +30,7 @@ gem 'httparty'
 gem 'awesome_print'
 gem 'thin'
 gem "bcrypt-ruby", :require => "bcrypt"
+gem 'rails_12factor'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 #gem 'spring',        group: :development
