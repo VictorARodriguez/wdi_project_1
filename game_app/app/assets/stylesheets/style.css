@@ -1,0 +1,25 @@
+
+body {
+	background-image:url("prince.gif");
+	background-repeat: repeat;
+}
+
+.wrapper {
+  width: 640px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: Cursive;
+  font-size: 80px;
+  margin-top: -50px;
+  color: white;
+}
+
+nav {
+  margin-top: -100px;
+/*  text-align: center;*/
+  padding: 20px;
+  font-family: Cursive;
+  color: white;
+}

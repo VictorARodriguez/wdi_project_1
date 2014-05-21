@@ -1,0 +1,13 @@
+<h2 class="game_name"><%= @game.name %></h2>
+
+</p>
+<h3>Users</h3>
+<%= render partial: "users/userform", locals: { user_local: @user, game_id: @game.id }%>
+<ul class="users">
+  <% @game.users.order(id: :name).each do |user| %>
+    <li class="user">
+      <h4><%= user.name %></h4>
+      <p><%= user.content %></p>
+    </li>
+  <% end %>
+</ul>
